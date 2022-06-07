@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter une personne{% endblock %}
+
+{% block body %}
+<div class="container">
+
+    <h3 class="text-center mt-3">Enregistrer une nouvelle personne !</h3>
+    <p class="text-muted"><i>Merci d'enregistrer des prénom respectueux.</i></p>
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Enregistrer">
+    {{ form_end(form) }}
+</div>
+{% endblock %}

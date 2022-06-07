@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Toutes les personnes{% endblock %}
+
+{% block body %}
+<div class="container">
+
+    <h3 class="text-center mt-3">Toutes les personnes!</h3>
+
+    {% for item in personnes %}
+        <article class="d-flex flex-columns">
+                <ul>
+                    <li>Prénom : {{ item.firstname }}</li>
+                    <li>Nom : {{ item.lastname }}</li>
+                    <li>Age : {{ item.age }}</li>
+                </ul>
+        </article>
+    {% endfor %}
+</div>
+{% endblock %}
